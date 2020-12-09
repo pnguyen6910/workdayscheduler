@@ -30,15 +30,15 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-    <div class="time-block row hour">9AM <button class="saveBtn"></button></div>
-    <div class="time-block row hour">10AM <button class="saveBtn"></button></div>
-    <div class="time-block row hour">11AM <button class="saveBtn"></button></div>
-    <div class="time-block row hour">12PM <button class="saveBtn"></button></div>
-    <div class="time-block row hour">1PM <button class="saveBtn"></button></div>
-    <div class="time-block row hour">2PM <button class="saveBtn"></button></div>
-    <div class="time-block row hour">3PM <button class="saveBtn"></button></div>
-    <div class="time-block row hour">4PM <button class="saveBtn"></button></div>
-    <div class="time-block row hour">5PM <button class="saveBtn"></button></div>
+    <div class="time-block row hour">9AM  <p class="task"></p><button class="saveBtn"></button></div>
+    <div class="time-block row hour">10AM <p class="task"></p> <button class="saveBtn"></button></div>
+    <div class="time-block row hour">11AM <p class="task"></p> <button class="saveBtn"></button></div>
+    <div class="time-block row hour">12PM <p class="task"></p> <button class="saveBtn"></button></div>
+    <div class="time-block row hour">1PM  <p class="task"></p><button class="saveBtn"></button></div>
+    <div class="time-block row hour">2PM  <p class="task"></p><button class="saveBtn"></button></div>
+    <div class="time-block row hour">3PM  <p class="task"></p><button class="saveBtn"></button></div>
+    <div class="time-block row hour">4PM  <p class="task"></p><button class="saveBtn"></button></div>
+    <div class="time-block row hour">5PM  <p class="task"></p><button class="saveBtn"></button></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -47,7 +47,9 @@
     <script>
       console.log(moment())
       //variables
-      //adding date for current day and so on
+      var userInput = $(".task")
+      //adding date for current day, past day and so on
+      $("#currentDay").text(moment().format('dddd') + ", " + moment().format('MMMM Do YYYY, h:mm:ss a'))
       //connecting to container
       //adding time of day
       //showing time of day
