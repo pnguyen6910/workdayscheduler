@@ -30,15 +30,59 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-    <div class="time-block row hour"><p class="timeBlock">9AM</p><p class="task">go to store</p><button class="saveBtn"><i class="far fa-save"></i></button></div>
-    <div class="time-block row hour"><p class="timeBlock">10AM</p><p class="task"></p> <button class="saveBtn"><i class="far fa-save"></i></button></div>
-    <div class="time-block row hour"><p class="timeBlock">11AM</p><p class="task"></p> <button class="saveBtn"><i class="far fa-save"></i></button></div>
-    <div class="time-block row hour"><p class="timeBlock">12PM</p><p class="task"></p> <button class="saveBtn"><i class="far fa-save"></i></button></div>
-    <div class="time-block row hour"><p class="timeBlock">1PM</p><p class="task">lunch</p><button class="saveBtn"><i class="far fa-save"></i></button></div>
-    <div class="time-block row hour"><p class="timeBlock">2PM</p><p class="task"></p><button class="saveBtn"><i class="far fa-save"></i></button></div>
-    <div class="time-block row hour"><p class="timeBlock">3PM</p><p class="task"></p><button class="saveBtn"><i class="far fa-save"></i></button></div>
-    <div class="time-block row hour"><p class="timeBlock">4PM</p><p class="task"></p><button class="saveBtn"><i class="far fa-save"></i></button></div>
-    <div class="time-block row hour"><p class="timeBlock">5PM</p><p class="task"></p><button class="saveBtn"><i class="far fa-save"></i></button></div>
+      <div class="time-block row hour">
+        <p class="timeBlock">9AM</p>
+        <p class="task">go to store</p>
+        <button class="saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class="time-block row hour">
+        <p class="timeBlock">10AM</p>
+        <p class="task"></p> 
+        <button class="saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class="time-block row hour">
+        <p class="timeBlock">11AM</p>
+        <p class="task">meeting w/ hr </p> 
+        <button class="saveBtn"><i class="far fa-save"></i></button>
+        </div>
+
+      <div class="time-block row hour">
+        <p class="timeBlock">12PM</p>
+        <p class="task"></p> 
+        <button class="saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class="time-block row hour">
+        <p class="timeBlock">1PM</p>
+        <p class="task">lunch</p>
+        <button class="saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class="time-block row hour">
+        <p class="timeBlock">2PM</p>
+        <p class="task"></p>
+        <button class="saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class="time-block row hour">
+        <p class="timeBlock">3PM</p>
+        <p class="task"></p>
+        <button class="saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class="time-block row hour">
+        <p class="timeBlock">4PM</p>
+        <p class="task"></p>
+        <button class="saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class="time-block row hour">
+        <p class="timeBlock">5PM</p>
+        <p class="task"></p>
+        <button class="saveBtn"><i class="far fa-save"></i></button>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -48,13 +92,17 @@
       console.log(moment())
       //variables
       var userInput = $(".task")
+      var taskText = ("")
+      var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a')
       //adding date for current day, past day and so on      
-      //adding time of day
       //showing time of day
-      $("#currentDay").text(moment().format('dddd') + ", " + moment().format('MMMM Do YYYY, h:mm:ss a'))
-      //connecting to container
+      $("#currentDay").text(moment().format('dddd') + ", " + currentTime)
+      //refreshing current time
+      //clicking on text block and entering information
+      $(".task").on(click, function() {
+
+      })
       //change the color of time blocks if it's the current time vs past time vs future
-      //adding text to container
       //saving added text to local storage
     </script>
   </body>
