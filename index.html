@@ -30,55 +30,55 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="time-block row hour">
+      <div data-time = "9" class="time-block row hour">
         <p class="timeBlock">9AM</p>
         <textarea class="task">go to store</textarea>
         <button class="saveBtn"><i class="far fa-save"></i></button>
       </div>
 
-      <div class="time-block row hour">
+      <div data-time = "10" class="time-block row hour">
         <p class="timeBlock">10AM</p>
         <textarea class="task"></textarea> 
         <button class="saveBtn"><i class="far fa-save"></i></button>
       </div>
 
-      <div class="time-block row hour">
+      <div data-time = "11" class="time-block row hour">
         <p class="timeBlock">11AM</p>
         <textarea class="task">meeting w/ hr </textarea> 
         <button class="saveBtn"><i class="far fa-save"></i></button>
         </div>
 
-      <div class="time-block row hour">
+      <div data-time = "12" class="time-block row hour">
         <p class="timeBlock">12PM</p>
         <textarea class="task"></textarea> 
         <button class="saveBtn"><i class="far fa-save"></i></button>
       </div>
 
-      <div class="time-block row hour">
+      <div data-time = "13" class="time-block row hour">
         <p class="timeBlock">1PM</p>
         <textarea class="task">lunch</textarea>
         <button class="saveBtn"><i class="far fa-save"></i></button>
       </div>
 
-      <div class="time-block row hour">
+      <div data-time = "14" class="time-block row hour">
         <p class="timeBlock">2PM</p>
         <textarea class="task"></textarea>
         <button class="saveBtn"><i class="far fa-save"></i></button>
       </div>
 
-      <div class="time-block row hour">
+      <div data-time = "15" class="time-block row hour">
         <p class="timeBlock">3PM</p>
         <textarea class="task"></textarea>
         <button class="saveBtn"><i class="far fa-save"></i></button>
       </div>
 
-      <div class="time-block row hour">
+      <div data-time = "16" class="time-block row hour">
         <p class="timeBlock">4PM</p>
         <textarea class="task"></textarea>
         <button class="saveBtn"><i class="far fa-save"></i></button>
       </div>
 
-      <div class="time-block row hour">
+      <div data-time = "17" class="time-block row hour">
         <p class="timeBlock">5PM</p>
         <textarea class="task"></textarea>
         <button class="saveBtn"><i class="far fa-save"></i></button>
@@ -88,22 +88,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/moment.min.js"></script>
-    <script>
-      console.log(moment())
-      //variables
-      var userInput = $(".task")
-      var taskText = ("")
-      var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a')
-      //adding date for current day, past day and so on      
-      //showing time of day
-      $("#currentDay").text(moment().format('dddd') + ", " + currentTime)
-      //refreshing current time
-      //clicking on text block and entering information
-      $(".task").on(click, function() {
-
-      })
-      //change the color of time blocks if it's the current time vs past time vs future
-      //saving added text to local storage
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
